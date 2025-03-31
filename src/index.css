@@ -1,0 +1,57 @@
+/* Custom properties/variables  */
+:root {
+  --body-background: #181818;
+  --main-background: #252525;
+  /* 	color-scheme: light dark; */
+}
+
+/*   
+    * The default text size in browsers is 16px. So, the default size 
+    of 1rem is 16px.  
+    * Setting a base font size of 10px give us easier rem calculations.
+    * 1rem = 10px, 1.5rem = 15px, 2rem = 20px (1rem means 1 time 
+      the size of the current font, 1.5rem means 1.5 times, 2rem means
+      2 times and so forth).
+    * rem = Relative to font-size of the root element.
+    * em = Relative to the font-size of the element (1em means 1 time 
+      the size of the current font, 1.5em means 1.5 times, 2em means
+      2 times and so forth).
+*/
+html {
+  font-size: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Base reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* img,
+picture,
+svg,
+video {
+	display: block;
+	max-width: 100%;
+} */
+
+/* Base styles */
+body {
+  background-color: var(--body-background);
+  width: 100%;
+  min-height: 100vh;
+  font-size: 1.6rem;
+  color: #d2d2d2;
+  line-height: 1.5;
+  /* 	display: flex; */
+  /* 	place-items: center; */
+}
